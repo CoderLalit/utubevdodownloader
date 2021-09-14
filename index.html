@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+      
+    <div id="box">
+        <div id="search-container">
+            <input
+              placeholder="Enter video URL"
+              type="search"
+              name="searchBar"
+              id="search-bar"
+              onsearch="searchVideo()"
+            />
+            <img onclick="searchVideo()" id="search-img" src="./magnifying-glass.png" alt="">
+        </div>
+
+      <div id="iframe">
+        <div id="loader"></div>
+        <br /><iframe 
+          onload="loadFun()"
+          id="video-frame"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+    </div>
+
+    <div id="table">
+      <table id="download-table" border="2">
+        <th>Name</th>
+        <th>Size</th>
+        <th>Link</th>
+
+        <tr id="small">
+          <td>Small</td>
+          <td>144p</td>
+          <td><button class="link-btn" id="0">Download</button></td>
+        </tr>
+        <tr id="medium">
+          <td>Medium</td>
+          <td>360p</td>
+          <td><button class="link-btn" id="1">Download</button></td>
+        </tr>
+        <tr id="hd">
+          <td>HD</td>
+          <td>720p</td>
+          <td><button class="link-btn" id="2">Download</button></td>
+        </tr>
+        <tr id="fhd">
+          <td>FHD</td>
+          <td>1080p</td>
+          <td><button class="link-btn" id="3">Download</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="info">
+      <p>Enter url in the box to search</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

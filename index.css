@@ -1,0 +1,112 @@
+#box::before{
+    display: inline-block;
+    width: 100%;
+    content: "YouTube Video Downloader";
+    font-size: 1.9rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: green;
+    margin: 15px;
+    
+}
+
+#box{
+    background:linear-gradient(rgba(0, 0, 1, 0.246),rgb(0, 0, 1,0));
+}
+
+hr{
+    margin-top: 100px;
+}
+
+#info{
+    text-align: center;
+    color: red;
+
+}
+
+#search-container{
+    /* background-color: aqua; */
+    width: 500px;
+    /* height: ; */
+    margin: auto;
+    border: 5px solid red;
+    border-radius: 2px;
+
+}
+#search-bar{
+    width: 92%;
+    margin: auto auto;
+    padding: 10px;
+    transition: all ease-in-out 0.5s;
+    border: none;
+}
+
+#search-bar:focus{
+    outline: none;
+}
+
+#search-img{
+    display: block;
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin: auto auto;
+}
+
+#search-img:hover{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+#iframe{
+    width: 700px;
+    margin: auto;
+    background: url("./Spinner-2.gif")
+                no-repeat center;
+    display: none;
+}
+
+
+#video-frame{
+    width: 100%;
+    height: 360px;
+}
+
+#table{
+    
+    /* background-color: blue; */
+    width: 50%;
+    margin: auto;
+    display: none;
+}
+
+#download-table{
+    border: none;
+    margin: 10px auto;
+    width: 100%;
+    height: 200px;
+    font-size: 1.2rem;
+    padding: 5px;
+
+}
+
+td{
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.link-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    margin: auto;
+    width: 110px;
+    height: 30px;
+}
+
+.link-btn:hover{
+    cursor: pointer;
+}
